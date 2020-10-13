@@ -1,0 +1,2977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Espaço Livre - Aluguel de mesas de estudo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(152, 159, 255);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>Reservar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Buscar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Cadastrar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>683</width>
+         <height>496</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="2" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>320</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="1" column="1">
+            <widget class="QTableWidget" name="tableWidget">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectItems</enum>
+             </property>
+             <property name="gridStyle">
+              <enum>Qt::SolidLine</enum>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+             <property name="cornerButtonEnabled">
+              <bool>true</bool>
+             </property>
+             <row>
+              <property name="text">
+               <string>01</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>02</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>02</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>03</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>id</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>nome</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>uf</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(152, 159, 255);</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="text">
+              <string>Buscar Local</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QRadioButton" name="radioButton_3">
+             <property name="text">
+              <string>Reservar Local</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton">
+             <property name="text">
+              <string>Cadastrar Local</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QToolBox" name="toolBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>213</red>
+                <green>213</green>
+                <blue>243</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>213</red>
+                <green>213</green>
+                <blue>243</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="Button">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>213</red>
+                <green>213</green>
+                <blue>243</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>665</width>
+             <height>116</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Dados Pessoais</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="4" column="7">
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="text">
+               <string>Entrar</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1" colspan="2">
+             <widget class="QLineEdit" name="lineEdit_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>dfdfd</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Nome / Razão Social</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3" colspan="2">
+             <widget class="QLabel" name="label_50">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Senha / Código</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4" colspan="2">
+             <widget class="QRadioButton" name="radioButton_6">
+              <property name="text">
+               <string>Atualizar Cadastro</string>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Tipo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="5" colspan="2">
+             <widget class="QLineEdit" name="lineEdit_9">
+              <property name="text">
+               <string>103329786-05</string>
+              </property>
+              <property name="maxLength">
+               <number>999999999</number>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" colspan="2">
+             <widget class="QComboBox" name="comboBox_9">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Empresa</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Profissional</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="3" colspan="2">
+             <widget class="QLabel" name="label_10">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>CPF / CNPJ</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6" colspan="2">
+             <widget class="QRadioButton" name="radioButton_7">
+              <property name="text">
+               <string>Recuperar Senha</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="5" colspan="2">
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>105</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Valparaiso</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" colspan="2">
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>105</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Valparaiso</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3" colspan="2">
+             <widget class="QLabel" name="label_9">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Endereço</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_65">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Email   </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="5" colspan="2">
+             <widget class="QLineEdit" name="lineEdit_4">
+              <property name="text">
+               <string>scscs</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QRadioButton" name="radioButton_5">
+              <property name="text">
+               <string>Log in</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="radioButton_4">
+              <property name="text">
+               <string>Novo Usuário</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>665</width>
+             <height>69</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Data da Reserva</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="1" column="3">
+             <widget class="QTimeEdit" name="timeEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentSection">
+               <enum>QDateTimeEdit::HourSection</enum>
+              </property>
+              <property name="displayFormat">
+               <string>hh:mm</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>false</bool>
+              </property>
+              <property name="time">
+               <time>
+                <hour>3</hour>
+                <minute>0</minute>
+                <second>0</second>
+               </time>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QDateEdit" name="dateEdit_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentSection">
+               <enum>QDateTimeEdit::YearSection</enum>
+              </property>
+              <property name="displayFormat">
+               <string>yyyy-MM-dd</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="date">
+               <date>
+                <year>2000</year>
+                <month>2</month>
+                <day>1</day>
+               </date>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="6">
+             <widget class="QTimeEdit" name="timeEdit_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="displayFormat">
+               <string>hh:mm</string>
+              </property>
+              <property name="time">
+               <time>
+                <hour>6</hour>
+                <minute>0</minute>
+                <second>0</second>
+               </time>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5" colspan="2">
+             <widget class="QLabel" name="label_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>                                                  Fim</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QDateEdit" name="dateEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentSection">
+               <enum>QDateTimeEdit::YearSection</enum>
+              </property>
+              <property name="displayFormat">
+               <string>yyyy-MM-dd</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="currentSectionIndex">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="3">
+             <widget class="QLabel" name="label_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>306</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>                                                Início</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>665</width>
+             <height>116</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Endereço</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_72">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Endereço</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="acceptDrops">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string>Rua</string>
+              </property>
+              <property name="frame">
+               <bool>true</bool>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_16">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>  Tipo </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QComboBox" name="comboBox_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>1</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Particular</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Municipal</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Estadual</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Religioso</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_52">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Estado</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>  Cidade</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="comboBox_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_29">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Ponto de Referência</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>ss</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_32">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>  CEP</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QLineEdit" name="lineEdit_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>9999999999999</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_33">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Bairro</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="lineEdit_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>105</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Valparaiso</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="label_73">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>   Nº</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QSpinBox" name="spinBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="wrapping">
+               <bool>false</bool>
+              </property>
+              <property name="specialValueText">
+               <string>0000</string>
+              </property>
+              <property name="suffix">
+               <string/>
+              </property>
+              <property name="maximum">
+               <number>999999999</number>
+              </property>
+              <property name="value">
+               <number>999999999</number>
+              </property>
+              <property name="displayIntegerBase">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>665</width>
+             <height>116</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Descrição do local / mesa </string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);</string>
+              </property>
+              <property name="text">
+               <string>Descrição Geral</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_137">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string>Telefone</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="comboBox_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Sim</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Não</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="label_8">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);</string>
+              </property>
+              <property name="text">
+               <string>Internet</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="comboBox_2">
+              <property name="currentIndex">
+               <number>2</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Não possui</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Cabo de rede</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Wireless</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_136">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);
+</string>
+              </property>
+              <property name="text">
+               <string> Mesas</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="comboBox_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Sim</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Não</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_140">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);</string>
+              </property>
+              <property name="text">
+               <string>Quantidade</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QSpinBox" name="spinBox_2"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);</string>
+              </property>
+              <property name="text">
+               <string>Cadeiras</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="comboBox">
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Sim</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Não</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="label_141">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(100, 100, 255, 50);</string>
+              </property>
+              <property name="text">
+               <string>Quantidade</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QSpinBox" name="spinBox_3"/>
+            </item>
+            <item row="0" column="1" colspan="3">
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>ddfdf</string>
+              </property>
+              <property name="maxLength">
+               <number>999999999</number>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>703</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionContato">
+   <property name="text">
+    <string>Contato</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_6</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_7</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>68</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>157</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_65</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>75</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_1</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>609</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>radioButton_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_6</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>410</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_7</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>530</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>207</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>294</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>264</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>264</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>427</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_65</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_1</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>359</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>603</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>76</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>264</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>94</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_65</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_1</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>379</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>431</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>384</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_65</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_1</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>176</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>435</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>416</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>586</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>550</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>539</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_10</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>351</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>546</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>comboBox_9</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>531</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>128</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>511</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_7</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>533</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>radioButton_5</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>534</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>303</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>530</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>559</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>328</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>583</x>
+     <y>543</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_65</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>103</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_1</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>509</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>label_50</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>lineEdit_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>545</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>609</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_7</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>555</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>radioButton_7</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>71</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
